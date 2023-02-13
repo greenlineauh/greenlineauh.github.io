@@ -31,6 +31,22 @@
 
     <link href="css/templatemo-pod-talk.css" rel="stylesheet">
 
+    <script>
+        var isNS = (navigator.appName == "PN") ? 1 : 0;
+        if(navigator.appName == "PN") document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
+        function mischandler(){
+        return false;
+        }
+        function mousehandler(e){
+        var myevent = (isNS) ? e : event;
+        var eventbutton = (isNS) ? myevent.which : myevent.button;
+        if((eventbutton==2)||(eventbutton==3)) return false;
+        }
+        document.oncontextmenu = mischandler;
+        document.onmousedown = mousehandler;
+        document.onmouseup = mousehandler;
+        </script>
+
 </head>
 
 <body>
@@ -101,7 +117,7 @@
 
                     <div class="col-lg-12 col-12 text-center">
 
-                        <b><h2 class="mb-0">PAPER PRODUCTS</h2></b>
+                        <b><h2 class="mb-0">OTHER PRODUCTS</h2></b>
                     </div>
 
                 </div>
@@ -117,18 +133,18 @@
 
                     <div class="col-lg-12 col-12">
                         <div class="section-title-wrap mb-5">
-                            <h4 class="section-title">Paper Products</h4>
+                            <h4 class="section-title">Other Products</h4>
                         </div>
                     </div>
 
                     <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
                         <div class="team-thumb bg-white shadow-lg">
-                            <img src="img/products/about/1.jpg"
+                            <img src="img/products/other/1.png"
                                 class="about-image img-fluid" alt="">
 
                             <div class="team-info">
                                 <h4 class="mb-2">
-                                    Cups
+                                    Foam Bowls
                                     <img src="images/verified.png" class="verified-image img-fluid" alt="">
                                 </h4>
 
@@ -155,12 +171,12 @@
 
                     <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
                         <div class="team-thumb bg-white shadow-lg">
-                            <img src="img/products/pp/Dinner-boxes-rbg-p2.png"
+                            <img src="img/products/other/2.png"
                                 class="about-image img-fluid" alt="">
 
                             <div class="team-info">
                                 <h4 class="mb-2">
-                                    Dinner boxes
+                                    Foam boxes
                                     <img src="images/verified.png" class="verified-image img-fluid" alt="">
                                 </h4>
 
@@ -187,12 +203,12 @@
 
                     <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0 mb-md-0">
                         <div class="team-thumb bg-white shadow-lg">
-                            <img src="img/products/pp/Take-away-bags-rbg-p1.png"
+                            <img src="img/products/other/3.png"
                                 class="about-image img-fluid" alt="">
 
                             <div class="team-info">
                                 <h4 class="mb-2">
-                                    Takeaway bag
+                                    Box
                                     <img src="images/verified.png" class="verified-image img-fluid" alt="">
                                 </h4>
 
@@ -217,12 +233,12 @@
 
                     <div class="col-lg-3 col-md-6 col-12">
                         <div class="team-thumb bg-white shadow-lg">
-                            <img src="img/products/pp/Drink-trays-rbg-p1.png"
+                            <img src="img/products/other/4.png"
                                 class="about-image img-fluid" alt="">
 
                             <div class="team-info">
                                 <h4 class="mb-2">
-                                    Foam Tray
+                                    Wooden Cutleries
                                     <img src="images/verified.png" class="verified-image img-fluid" alt="">
                                 </h4>
 
@@ -264,12 +280,12 @@
 
                     <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
                         <div class="team-thumb bg-white shadow-lg">
-                            <img src="img/products/pp/sandwich-wedges.png"
+                            <img src="img/products/other/5.png"
                                 class="about-image img-fluid" alt="">
 
                             <div class="team-info">
                                 <h4 class="mb-2">
-                                    Wedges
+                                    Stirrers
                                     <img src="images/verified.png" class="verified-image img-fluid" alt="">
                                 </h4>
 
@@ -296,12 +312,12 @@
 
                     <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
                         <div class="team-thumb bg-white shadow-lg">
-                            <img src="img/products/pp/Wrap-box.png"
+                            <img src="img/products/other/7.png"
                                 class="about-image img-fluid" alt="">
 
                             <div class="team-info">
                                 <h4 class="mb-2">
-                                    Wrap box
+                                    Piping Bags
                                     <img src="images/verified.png" class="verified-image img-fluid" alt="">
                                 </h4>
 
@@ -328,12 +344,12 @@
 
                     <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0 mb-md-0">
                         <div class="team-thumb bg-white shadow-lg">
-                            <img src="img/products/pp/Endura1.png"
+                            <img src="img/products/other/12.png"
                                 class="about-image img-fluid" alt="">
 
                             <div class="team-info">
                                 <h4 class="mb-2">
-                                    Endura
+                                    Hair Caps
                                     <img src="images/verified.png" class="verified-image img-fluid" alt="">
                                 </h4>
 
@@ -358,12 +374,12 @@
 
                     <div class="col-lg-3 col-md-6 col-12">
                         <div class="team-thumb bg-white shadow-lg">
-                            <img src="img/products/pp/brown-box.png"
+                            <img src="img/products/other/9.png"
                                 class="about-image img-fluid" alt="">
 
                             <div class="team-info">
                                 <h4 class="mb-2">
-                                    Brown Box
+                                    Chef Hats
                                     <img src="images/verified.png" class="verified-image img-fluid" alt="">
                                 </h4>
 
