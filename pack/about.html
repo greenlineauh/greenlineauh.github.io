@@ -33,6 +33,25 @@
     <link rel="stylesheet" href="assets/css/icomoon.css">
     <!--<< Main.css >>-->
     <link rel="stylesheet" href="assets/css/main.css">
+
+
+
+    <script>
+        var isNS = (navigator.appName == "PN") ? 1 : 0;
+        if(navigator.appName == "PN") document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
+        function mischandler(){
+        return false;
+        }
+        function mousehandler(e){
+        var myevent = (isNS) ? e : event;
+        var eventbutton = (isNS) ? myevent.which : myevent.button;
+        if((eventbutton==2)||(eventbutton==3)) return false;
+        }
+        document.oncontextmenu = mischandler;
+        document.onmousedown = mousehandler;
+        document.onmouseup = mousehandler;
+        </script>
+
 </head>
 
 <body>
@@ -250,7 +269,7 @@
                                                         </a>
                                                         <ul class="submenu">
                                                             <li><a href="news-grid.html">Blog</a></li>
-                                                            <li><a href="404.html">Careers</a></li>
+                                                            <li><a href="career.html">Careers</a></li>
                                                             <li><a href="faq.html">Faq's</a></li>
                                                            
                                                             <li><a href="404.html">404 Page</a></li>
@@ -374,7 +393,7 @@
                                                         </a>
                                                         <ul class="submenu">
                                                             <li><a href="news-grid.html">Blog </a></li>
-                                                            <li><a href="404.html">Careers</a></li>
+                                                            <li><a href="career.html">Careers</a></li>
                                                             <li><a href="faq.html">Faq's</a></li>
                                                             <li><a href="404.html">404 Page</a></li>
                                                         </ul>
@@ -653,7 +672,7 @@
                     <img src="assets/img/img/product/b2-paperproducts.png" alt="shape-img">
                 </div>
                 <div class="girl-shape float-bob-x">
-                    <img src="assets/img/girl-shape-2.png" alt="shape-img">
+                    <img src="assets/img/img/product/b2-paperproducts.png" alt="shape-img">
                 </div>
                 <div class="cta-content text-center">
                     <h2 class="text-white mb-40 wow fadeInUp" data-wow-delay=".3s">Get discount in all <br> kind of
