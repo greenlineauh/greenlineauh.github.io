@@ -34,9 +34,7 @@
     <!--<< Main.css >>-->
     <link rel="stylesheet" href="assets/css/main.css">
 
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
+     
     <script>
         var isNS = (navigator.appName == "PN") ? 1 : 0;
         if(navigator.appName == "PN") document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
@@ -52,6 +50,7 @@
         document.onmousedown = mousehandler;
         document.onmouseup = mousehandler;
         </script>
+
 </head>
 
 <body>
@@ -466,6 +465,8 @@
                 </div>
             </div>
         </header>
+
+
      <!-- Login Modal -->
      <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -597,7 +598,6 @@
         </div>
     </div>
 
-
     <!-- Breadcumb Section Start -->
     <div class="breadcrumb-wrapper">
         <div class="book1">
@@ -608,7 +608,7 @@
         </div>
         <div class="container">
             <div class="page-heading">
-                <h1> Careers Page</h1>
+                <h1>Faqs</h1>
                 <div class="page-header">
                     <ul class="breadcrumb-items wow fadeInUp" data-wow-delay=".3s">
                         <li>
@@ -620,7 +620,7 @@
                             <i class="fa-solid fa-chevron-right"></i>
                         </li>
                         <li>
-                           Careers
+                            Faq
                         </li>
                     </ul>
                 </div>
@@ -628,148 +628,442 @@
         </div>
     </div>
 
-    
-    <!-- Contact Section Start -->
-    <section class="contact-section fix section-padding">
+    <!--<< Faq Section Start >>-->
+    <section class="faq-section fix section-padding">
         <div class="container">
-            <div class="contact-wrapper">
-                <div class="row g-4 align-items-center">
-                    <div class="col-lg-4">
-                        <div class="contact-left-items">
-                            <div class="contact-info-area-2">
-                                <div class="contact-info-items mb-4">
-                                    <div class="icon">
-                                        <i class="icon-icon-10"></i>
-                                    </div>
-                                    <div class="content">
-                                        <p>Call Us 7/24</p>
-                                        <h3>
-                                            <a href="tel:+97126421141">+971 2 6421141</a>
-                                        </h3>
-                                    </div>
-                                </div>
-                                <div class="contact-info-items mb-4">
-                                    <div class="icon">
-                                        <i class="icon-icon-11"></i>
-                                    </div>
-                                    <div class="content">
-                                        <p>Make a Quote</p>
-                                        <h3>
-                                            <a href="mailto: sales@greenlinepack.com"> sales@greenlinepack.com</a>
-                                        </h3>
-                                    </div>
-                                </div>
-                                <div class="contact-info-items border-none">
-                                    <div class="icon">
-                                        <i class="icon-icon-12"></i>
-                                    </div>
-                                    <div class="content">
-                                        <p>Location</p>
-                                        <h3>
-                                            Near Al Jaber - Musaffah - M21 - Abu Dhabi, UAE.
-                                        </h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="video-image">
-                                <img src="assets/img/contact.jpg" alt="img">
-                                <div class="video-box">
-                                    <a href=""
-                                        class="video-btn ripple video-popup">
-                                        <i class="fa-solid fa-play"></i>
+            <div class="faq-wrapper">
+                <div class="row g-4">
+                    <div class="col-lg-3">
+                        <div class="faq-left">
+                            <ul class="nav" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <a href="#trust" data-bs-toggle="tab" class="nav-link active" aria-selected="true"
+                                        role="tab">
+                                        Pre Sale Questions
                                     </a>
-                                </div>
-                            </div>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a href="#general" data-bs-toggle="tab" class="nav-link" aria-selected="false"
+                                        role="tab" tabindex="-1">
+                                        General
+                                    </a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a href="#programs" data-bs-toggle="tab" class="nav-link" aria-selected="false"
+                                        role="tab" tabindex="-1">
+                                        Pre Sale
+                                    </a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a href="#kindergarten" data-bs-toggle="tab" class="nav-link" aria-selected="false"
+                                        role="tab" tabindex="-1">
+                                        Sale Questions
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="col-lg-8">
-                        <div class="contact-content">
-                            <h2>Ready to Get Started?</h2>
-                            <p>
-                                Green Line Pack focus on high quality eco friendly packing and packaging materials in both domestic and international market. We supply of food packaging products in United Arab Emirates. Disposable, Food Packing Solutions in quality, hygienic and safe products which offers customer delight.
-                            </p>
-                            <form action="" id="submit-form" method="" class="contact-form-items">
-                                <div class="row g-4">
-                                    <div class="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
-                                        <div class="form-clt">
-                                            <span>Your  First Name*</span>
-                                            <input type="text" name="fname" id="fname" placeholder="Your Name" required>
+                    <div class="col-lg-9">
+                        <div class="tab-content">
+                            <div id="trust" class="tab-pane fade show active" role="tabpanel">
+                                <div class="faq-content">
+                                    <div class="faq-accordion">
+                                        <div class="accordion" id="accordion">
+                                            <div class="accordion-item mb-3">
+                                                <h5 class="accordion-header">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#faq1"
+                                                        aria-expanded="true" aria-controls="faq1">
+                                                        “I RECEIVED A DEFECTIVE/DAMAGED ITEM, CAN I GET A REFUND?”
+                                                    </button>
+                                                </h5>
+                                                <div id="faq1" class="accordion-collapse collapse"
+                                                    data-bs-parent="#accordion">
+                                                    <div class="accordion-body">
+                                                        In case the item you received is damaged or defective, you could return an item in the same condition as you received it with the original box and/or packaging intact within 14 days of purchase. Once we receive the returned item, we will inspect it and if the item is found to be defective or damaged, we will process the refund along with any shipping fees incurred. If you require to exchange it for the same item, send us an email at enquiry@greenlinepack.com
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item mb-3">
+                                                <h5 class="accordion-header">
+                                                    <button class="accordion-button" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#faq2"
+                                                        aria-expanded="false" aria-controls="faq2">
+                                                        “I RECEIVED A WRONG ITEM, HOW CAN I RETURN IT?”
+                                                    </button>
+                                                </h5>
+                                                <div id="faq2" class="accordion-collapse show"
+                                                    data-bs-parent="#accordion">
+                                                    <div class="accordion-body">
+                                                        In the unusual circumstance where the item received is wrong, you can return the item in the same condition you received and in the original box and/or packaging intact. Once we receive the returned item, we will process the refund along with free 14 day returns.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item mb-3">
+                                                <h5 class="accordion-header">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#faq3"
+                                                        aria-expanded="false" aria-controls="faq3">
+                                                        “I HAVE CHANGED MY MIND; CAN I RETURN WHAT I HAVE CHANGED MY MIND; CAN I RETURN WHAT I HAVE BOUGHT? I HAVE BOUGHT?”
+                                                    </button>
+                                                </h5>
+                                                <div id="faq3" class="accordion-collapse collapse"
+                                                    data-bs-parent="#accordion">
+                                                    <div class="accordion-body">
+                                                        If you changed your mind before the product is shipped, just call us to cancel your order and we will process the refund along with any shipping fees applied. If you wish to return the item after it's been shipped, you have up to 14 days to return them, keeping the return policy in mind.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item mb-3">
+                                                <h5 class="accordion-header">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#faq4"
+                                                        aria-expanded="false" aria-controls="faq4">
+                                                        “HOW LONG DOES IT TAKE THE COURIER TO COLLECT THE RETURNED ITEMS?”
+                                                    </button>
+                                                </h5>
+                                                <div id="faq4" class="accordion-collapse collapse"
+                                                    data-bs-parent="#accordion">
+                                                    <div class="accordion-body">
+                                                        If you changed your mind before the product is shipped, just call us to cancel your order and we will process the refund along with any shipping fees applied. If you wish to return the item after it's been shipped, you have up to 14 days to return them, keeping the return policy in mind.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item mb-3">
+                                                <h5 class="accordion-header">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#faq5"
+                                                        aria-expanded="false" aria-controls="faq5">
+                                                        “HOW LONG DOES IT TAKE THE COURIER TO COLLECT THE RETURNED ITEMS?”
+                                                    </button>
+                                                </h5>
+                                                <div id="faq5" class="accordion-collapse collapse"
+                                                    data-bs-parent="#accordion">
+                                                    <div class="accordion-body">
+                                                        Typically, Courier representative will contact you within 3-5 days from the day you requested a return. However, it might sometimes take up to two weeks for a courier to collect the item.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h5 class="accordion-header">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#faq6"
+                                                        aria-expanded="false" aria-controls="faq6">
+                                                        “HOW CAN I RECEIVE A REFUND IF I PAID BY CREDIT CARD?”
+                                                    </button>
+                                                </h5>
+                                                <div id="faq6" class="accordion-collapse collapse"
+                                                    data-bs-parent="#accordion">
+                                                    <div class="accordion-body">
+                                                        If you have paid through electronic means (Credit or Debit card), the paid amount will be refunded to your card. The amount paid may take up to a month to reflect in your card statement or Cash U, depending on individual’s bank process. Please note a minimum return order amount of 50AED is required to refund to card if not we the amount will be returned as cash.
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col-lg-6 wow fadeInUp" data-wow-delay=".5s">
-                                        <div class="form-clt">
-                                            <span>Your Last Name*</span>
-                                            <input type="text" name="Lname" id="Lname" placeholder="Last Name" required>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
-                                        <div class="form-clt">
-                                            <span>Your Phone Number*</span>
-                                            <input type="text" name="number" id="number" placeholder="Phone Number" required>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 wow fadeInUp" data-wow-delay=".5s">
-                                        <div class="form-clt">
-                                            <span>Your Email*</span>
-                                            <input type="text" name="email" id="email" placeholder="Your Email" required>
-                                        </div>
-                                    </div>
-                                   
-                                    <div class="col-lg-6 wow fadeInUp" data-wow-delay=".5s">
-                                        <div class="form-clt">
-                                            <span>Resume*</span>
-                                            <input type="file" name="resume" id="resume" placeholder="Your CV" required>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12 wow fadeInUp" data-wow-delay=".7s">
-                                        <div class="form-clt">
-                                            <span>Cover Letter*</span>
-                                            <textarea name="CoverLetter" id="CoverLetter"
-                                                placeholder="Cover Letter"></textarea>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-7 wow fadeInUp" data-wow-delay=".9s">
-                                        <button type="submit" class="theme-btn">
-                                            Send Resume <i class="fa-solid fa-arrow-right-long"></i>
-                                        </button>
                                     </div>
                                 </div>
-                            </form>
+                            </div>
+                            <div id="general" class="tab-pane fade" role="tabpanel">
+                                <div class="faq-content">
+                                    <div class="faq-accordion">
+                                        <div class="accordion" id="accordion2">
+                                            <div class="accordion-item mb-3">
+                                                <h5 class="accordion-header">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#faq11"
+                                                        aria-expanded="true" aria-controls="faq11">
+                                                        “CAN I REPLACE OR EXCHANGE AN ITEM RATHER THAN A REFUND?”
+                                                    </button>
+                                                </h5>
+                                                <div id="faq11" class="accordion-collapse collapse"
+                                                    data-bs-parent="#accordion">
+                                                    <div class="accordion-body">
+                                                        We only replace items if they are defective or damaged. If you need to exchange it for the same item, send us an email at enquiry@greenlinepack.com. This claim needs to be made within 14 days of purchase. Replacement or Exchange once this period has passed will not be accomodated.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item mb-3">
+                                                <h5 class="accordion-header">
+                                                    <button class="accordion-button" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#faq22"
+                                                        aria-expanded="false" aria-controls="faq22">
+                                                        “I LOST THE ORIGINAL PACKING IN WHICH I RECEIVED THE ITEM, HOW CAN I STILL RETURN IT?”
+                                                    </button>
+                                                </h5>
+                                                <div id="faq22" class="accordion-collapse show"
+                                                    data-bs-parent="#accordion">
+                                                    <div class="accordion-body">
+                                                        We accept return of item only if it is in an unopened, original box and/or packaging intact with all labels and barcodes on it, however in this case, please check the Help Center for more information.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item mb-3">
+                                                <h5 class="accordion-header">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#faq33"
+                                                        aria-expanded="false" aria-controls="faq33">
+                                                        WHAT DOES IT MEAN BY ‘RETAIL PACKAGING’ NEVER OPENED (SEALED & CLOSED BOX)?
+                                                    </button>
+                                                </h5>
+                                                <div id="faq33" class="accordion-collapse collapse"
+                                                    data-bs-parent="#accordion">
+                                                    <div class="accordion-body">
+                                                        A brand-new, unused, unopened, undamaged item in its original packaging . Packaging should be the same as when it was delivered to you.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item mb-3">
+                                                <h5 class="accordion-header">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#faq44"
+                                                        aria-expanded="false" aria-controls="faq44">
+                                                        WHO PAYS FOR THE SHIPPING CHARGES WHEN I RETURN AN ITEM?
+                                                    </button>
+                                                </h5>
+                                                <div id="faq44" class="accordion-collapse collapse"
+                                                    data-bs-parent="#accordion">
+                                                    <div class="accordion-body">
+                                                        The Customer will need to pay the shipping charges (10 AED) for any product return. (excluding damaged/defect products or wrong products delivered by Green Line Pack team) or send your item to Greenline Pack Musaffah Branch,, If you receive a refund, the cost of return shipping will be deducted from your refund.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item mb-3">
+                                                <h5 class="accordion-header">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#faq55"
+                                                        aria-expanded="false" aria-controls="faq55">
+                                                        “I LOST THE ORIGINAL PACKING IN WHICH I RECEIVED THE ITEM, HOW CAN I STILL RETURN IT?”
+                                                    </button>
+                                                </h5>
+                                                <div id="faq55" class="accordion-collapse collapse"
+                                                    data-bs-parent="#accordion">
+                                                    <div class="accordion-body">
+                                                        We accept return of item only if it is in an unopened, original box and/or packaging intact with all labels and barcodes on it, however in this case, please check the Help Center for more information.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h5 class="accordion-header">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#faq66"
+                                                        aria-expanded="false" aria-controls="faq66">
+                                                        “I RECEIVED A DEFECTIVE/DAMAGED ITEM, CAN I GET A REFUND?”
+                                                    </button>
+                                                </h5>
+                                                <div id="faq66" class="accordion-collapse collapse"
+                                                    data-bs-parent="#accordion">
+                                                    <div class="accordion-body">
+                                                        In the unusual circumstance where the item received is wrong, you can return the item in the same condition you received and in the original box and/or packaging intact. Once we receive the returned item, we will process the refund along with free 14 day returns.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="programs" class="tab-pane fade" role="tabpanel">
+                                <div class="faq-content">
+                                    <div class="faq-accordion">
+                                        <div class="accordion" id="accordion3">
+                                            <div class="accordion-item mb-3">
+                                                <h5 class="accordion-header">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#faq111"
+                                                        aria-expanded="true" aria-controls="faq111">
+                                                        “HOW CAN I RECEIVE A REFUND IF I PAID BY CREDIT CARD?”
+                                                    </button>
+                                                </h5>
+                                                <div id="faq111" class="accordion-collapse collapse"
+                                                    data-bs-parent="#accordion">
+                                                    <div class="accordion-body">
+                                                        If you have paid through electronic means (Credit or Debit card), the paid amount will be refunded to your card. The amount paid may take up to a month to reflect in your card statement or Cash U, depending on individual’s bank process. Please note a minimum return order amount of 50AED is required to refund to card if not we the amount will be returned as cash.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item mb-3">
+                                                <h5 class="accordion-header">
+                                                    <button class="accordion-button" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#faq222"
+                                                        aria-expanded="false" aria-controls="faq222">
+                                                        “I HAVE CHANGED MY MIND; CAN I RETURN WHAT I HAVE CHANGED MY MIND; CAN I RETURN WHAT I HAVE BOUGHT? I HAVE BOUGHT?”
+                                                    </button>
+                                                </h5>
+                                                <div id="faq222" class="accordion-collapse show"
+                                                    data-bs-parent="#accordion">
+                                                    <div class="accordion-body">
+                                                        If you changed your mind before the product is shipped, just call us to cancel your order and we will process the refund along with any shipping fees applied. If you wish to return the item after it's been shipped, you have up to 14 days to return them, keeping the return policy in mind.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item mb-3">
+                                                <h5 class="accordion-header">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#faq333"
+                                                        aria-expanded="false" aria-controls="faq333">
+                                                        WHAT DOES IT MEAN BY ‘RETAIL PACKAGING’ NEVER OPENED (SEALED & CLOSED BOX)?
+                                                    </button>
+                                                </h5>
+                                                <div id="faq333" class="accordion-collapse collapse"
+                                                    data-bs-parent="#accordion">
+                                                    <div class="accordion-body">
+                                                        A brand-new, unused, unopened, undamaged item in its original packaging . Packaging should be the same as when it was delivered to you.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item mb-3">
+                                                <h5 class="accordion-header">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#faq444"
+                                                        aria-expanded="false" aria-controls="faq444">
+                                                        “I RECEIVED A DEFECTIVE/DAMAGED ITEM, CAN I GET A REFUND?”
+                                                    </button>
+                                                </h5>
+                                                <div id="faq444" class="accordion-collapse collapse"
+                                                    data-bs-parent="#accordion">
+                                                    <div class="accordion-body">
+                                                        In the unusual circumstance where the item received is wrong, you can return the item in the same condition you received and in the original box and/or packaging intact. Once we receive the returned item, we will process the refund along with free 14 day returns.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item mb-3">
+                                                <h5 class="accordion-header">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#faq555"
+                                                        aria-expanded="false" aria-controls="faq555">
+                                                        “HOW LONG DOES IT TAKE THE COURIER TO COLLECT THE RETURNED ITEMS?”
+                                                    </button>
+                                                </h5>
+                                                <div id="faq555" class="accordion-collapse collapse"
+                                                    data-bs-parent="#accordion">
+                                                    <div class="accordion-body">
+                                                        Typically, Courier representative will contact you within 3-5 days from the day you requested a return. However, it might sometimes take up to two weeks for a courier to collect the item
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h5 class="accordion-header">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#faq666"
+                                                        aria-expanded="false" aria-controls="faq666">
+                                                        “I LOST THE ORIGINAL PACKING IN WHICH I RECEIVED THE ITEM, HOW CAN I STILL RETURN IT?”
+                                                    </button>
+                                                </h5>
+                                                <div id="faq666" class="accordion-collapse collapse"
+                                                    data-bs-parent="#accordion">
+                                                    <div class="accordion-body">
+                                                        We accept return of item only if it is in an unopened, original box and/or packaging intact with all labels and barcodes on it, however in this case, please check the Help Center for more information.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="kindergarten" class="tab-pane fade" role="tabpanel">
+                                <div class="faq-content">
+                                    <div class="faq-accordion">
+                                        <div class="accordion" id="accordion4">
+                                            <div class="accordion-item mb-3">
+                                                <h5 class="accordion-header">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#faq1111"
+                                                        aria-expanded="true" aria-controls="faq1111">
+                                                        “I RECEIVED A WRONG ITEM, HOW CAN I RETURN IT?”
+                                                    </button>
+                                                </h5>
+                                                <div id="faq1111" class="accordion-collapse collapse"
+                                                    data-bs-parent="#accordion">
+                                                    <div class="accordion-body">
+                                                        In the unusual circumstance where the item received is wrong, you can return the item in the same condition you received and in the original box and/or packaging intact. Once we receive the returned item, we will process the refund along with free 14 day returns.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item mb-3">
+                                                <h5 class="accordion-header">
+                                                    <button class="accordion-button" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#faq2222"
+                                                        aria-expanded="false" aria-controls="faq2222">
+                                                        What is included in your services?
+                                                    </button>
+                                                </h5>
+                                                <div id="faq2222" class="accordion-collapse show"
+                                                    data-bs-parent="#accordion">
+                                                    <div class="accordion-body">
+                                                        v class="accordion-body">
+                                                        In the unusual circumstance where the item received is wrong, you can return the item in the same condition you received and in the original box and/or packaging intact. Once we receive the returned item, we will process the refund along with free 14 day returns.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item mb-3">
+                                                <h5 class="accordion-header">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#faq3333"
+                                                        aria-expanded="false" aria-controls="faq3333">
+                                                        “I RECEIVED A DEFECTIVE/DAMAGED ITEM, CAN I GET A REFUND?”
+                                                    </button>
+                                                </h5>
+                                                <div id="faq3333" class="accordion-collapse collapse"
+                                                    data-bs-parent="#accordion">
+                                                    <div class="accordion-body">
+                                                        In case the item you received is damaged or defective, you could return an item in the same condition as you received it with the original box and/or packaging intact within 14 days of purchase. Once we receive the returned item, we will inspect it and if the item is found to be defective or damaged, we will process the refund along with any shipping fees incurred. If you require to exchange it for the same item,
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item mb-3">
+                                                <h5 class="accordion-header">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#faq4444"
+                                                        aria-expanded="false" aria-controls="faq4444">
+                                                        “HOW LONG DOES IT TAKE THE COURIER TO COLLECT THE RETURNED ITEMS?”
+                                                    </button>
+                                                </h5>
+                                                <div id="faq4444" class="accordion-collapse collapse"
+                                                    data-bs-parent="#accordion">
+                                                    <div class="accordion-body">
+                                                        Typically, Courier representative will contact you within 3-5 days from the day you requested a return. However, it might sometimes take up to two weeks for a courier to collect the item.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item mb-3">
+                                                <h5 class="accordion-header">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#faq5555"
+                                                        aria-expanded="false" aria-controls="faq5555">
+                                                        “HOW CAN I RECEIVE A REFUND IF I PAID BY CREDIT CARD?”
+                                                    </button>
+                                                </h5>
+                                                <div id="faq5555" class="accordion-collapse collapse"
+                                                    data-bs-parent="#accordion">
+                                                    <div class="accordion-body">
+                                                        If you have paid through electronic means (Credit or Debit card), the paid amount will be refunded to your card. The amount paid may take up to a month to reflect in your card statement or Cash U, depending on individual’s bank process. Please note a minimum return order amount of 50AED is required to refund to card if not we the amount will be returned as cash.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h5 class="accordion-header">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#faq6666"
+                                                        aria-expanded="false" aria-controls="faq6666">
+                                                        “I LOST THE ORIGINAL PACKING IN WHICH I RECEIVED THE ITEM, HOW CAN I STILL RETURN IT?”
+                                                    </button>
+                                                </h5>
+                                                <div id="faq6666" class="accordion-collapse collapse"
+                                                    data-bs-parent="#accordion">
+                                                    <div class="accordion-body">
+                                                        We accept return of item only if it is in an unopened, original box and/or packaging intact with all labels and barcodes on it, however in this case, please check the Help Center for more information.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <script>
-        $("#submit-form").submit((e)=>{
-        e.preventDefault()
-        $.ajax({
-        url:"https://script.google.com/macros/s/AKfycby8mp76A35Jg-xV2xQwvmohuqlhlFgu3QBe8FYod4NsWkhqBKkHOqQywXyy5nDpH8CRnQ/exec",
-        data:$("#submit-form").serialize(),
-        method:"post",
-        success:function (response){
-        alert("Our HR will be in contact with you shortly. Thank you!")
-        window.location.reload()
-        //window.location.href="https://google.com"
-        },
-        error:function (err){
-        alert("Something Error")
-        
-        }
-        })
-        })
-        </script>
-    <!--<< Map Section Start >>-->
-    <div class="map-section">
-        <div class="map-items">
-            <div class="googpemap">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d115383.5103790607!2d54.472751!3d24.376909!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e415228d32517%3A0x3ddcc0fcc66cdca6!2sGreen%20Line%20plastic%20trading!5e1!3m2!1sen!2sae!4v1727640319859!5m2!1sen!2sae"
-                    style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-        </div>
-    </div>
 
     <!-- Footer Section start  -->
     <footer class="footer-section footer-bg">
@@ -861,7 +1155,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="about.html">
+                                    <a href="contact.html">
                                         <i class="fa-solid fa-chevrons-right"></i>
                                         About
                                     </a>
