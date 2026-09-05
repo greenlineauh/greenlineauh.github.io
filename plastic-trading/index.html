@@ -18,7 +18,7 @@
 
 <style>
 .home-blog{padding:92px 0;background:#fff}.home-blog .section-head{margin-bottom:35px}.home-blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.home-blog-card{min-height:265px;padding:28px;background:linear-gradient(145deg,#123522,#1d8050);border-radius:14px;text-decoration:none;color:#fff;display:flex;flex-direction:column;box-sizing:border-box;position:relative;overflow:hidden;transition:.25s}.home-blog-card:after{content:"";position:absolute;width:190px;height:190px;border:1px solid rgba(255,255,255,.12);border-radius:50%;right:-70px;top:-80px}.home-blog-card:hover{transform:translateY(-6px);box-shadow:0 22px 50px rgba(13,48,28,.15)}.home-blog-card span{font-size:9px;letter-spacing:1.7px;color:#7de0a5;font-weight:900;position:relative;z-index:1}.home-blog-card small{font-size:9px;letter-spacing:1px;color:rgba(255,255,255,.5);margin-top:7px;position:relative;z-index:1}.home-blog-card h3{font-size:22px;line-height:1.25;margin:34px 0 10px;position:relative;z-index:1}.home-blog-card p{font-size:12px;line-height:1.7;color:rgba(255,255,255,.64);position:relative;z-index:1}.home-blog-card b{margin-top:auto;font-size:11px;color:#fff;position:relative;z-index:1}@media(max-width:900px){.home-blog-grid{grid-template-columns:1fr 1fr}}@media(max-width:600px){.home-blog-grid{grid-template-columns:1fr}.home-blog{padding:65px 0}}
-</style>
+</style>   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head><body id="top"><header><div class="container nav"><a class="brand" href="index.html"><img src="logo.png" alt="Green Line Plastic Trading LLC"></a><button class="menu-toggle" aria-label="Open navigation">☰</button><nav><a href="index.html">Home</a><a href="about.html">About Us</a><div class="nav-dropdown"><a class="nav-drop-toggle" href="products.html">Products <span>⌄</span></a><div class="nav-dropdown-menu"><a href="products.html">All Products</a><a href="paper-products.html">Paper Products</a><a href="aluminum-products.html">Aluminum Products</a><a href="plastic-products.html">Plastic Products</a><a href="other-products.html">Other Products</a></div></div><a href="blog.html">Blog</a>
 <a href="contact.html">Contact Us</a></nav></div></header>
 <main>
@@ -111,7 +111,7 @@
       <h2 id="quoteTitle">Tell us what you need</h2>
       <p>Send your requirement to our sales team and we’ll get back to you.</p>
     </div>
-    <form class="quote-form" id="quoteForm">
+    <form class="quote-form" id="submit-form">
       <div class="form-grid">
         <label>Full Name<input type="text" name="name" placeholder="Your name" required></label>
         <label>Company<input type="text" name="company" placeholder="Company name"></label>
@@ -122,6 +122,27 @@
       <button class="btn btn-primary form-submit" type="submit">Send Request &rarr;</button>
       <p class="form-note">Your email app will open with the request ready to send to sales@greenlinepack.com.</p>
     </form>
+
+     <script>
+        $("#submit-form").submit((e)=>{
+        e.preventDefault()
+        $.ajax({
+        url:"https://script.google.com/macros/s/AKfycby8mp76A35Jg-xV2xQwvmohuqlhlFgu3QBe8FYod4NsWkhqBKkHOqQywXyy5nDpH8CRnQ/exec",
+        data:$("#submit-form").serialize(),
+        method:"post",
+        success:function (response){
+        alert("One of our team will be in contact with you shortly. Thank you!")
+        window.location.reload()
+        //window.location.href="https://google.com"
+        },
+        error:function (err){
+        alert("Something Error")
+        
+        }
+        })
+        })
+        </script>
+    
   </div>
 </div>
 <a class="call-float" href="tel:+97126421141" aria-label="Call Green Line Plastic Trading LLC"><span class="call-icon">☎</span><span>Call Us</span></a><footer class="site-footer">
